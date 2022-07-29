@@ -137,6 +137,7 @@ function PokemonDetailCard({ pokemon, visible, closeModalPokemon, color }: Pokem
                                 textAlign: "center",
                                 backgroundColor: "#858585",
                                 color: "#FFFFFF",
+                                width:"auto",
                                 borderRadius: "12px",
                                 padding: "2px 8px"
                             }}
@@ -199,13 +200,13 @@ function PokemonDetailCard({ pokemon, visible, closeModalPokemon, color }: Pokem
                                     </Text>
                                     <Progress
                                         shadow
-                                        
+                                        color="success"
                                         value={stat.base_stat}
                                         max={200}
                                         css={{
                                             color: "$accents3",
-                                            backgroundColor: `${color}`,
-                                            flexGrow: 3,
+                                            backgroundColor: `${color}80`,
+                                            flexGrow: 1,
                                         }} />
                                 </Row>
                             ))}
